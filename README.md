@@ -1,26 +1,21 @@
-# Lab 2 Tasks checklist
+# C Lab - Integer Utility Functions
 
+This introductory C exercise separates reusable functions from the file containing `main`.
 
-* _____ Using either github Codespace or a local IDE, write the functions described in the lab
-* _____ Come up with 5 test cases for each function and add them to your worksheet
-* _____ Write the test main for your program to test your functions
-* _____ Compile, run and test your functions using your 5 test cases
-* _____ fix any errors if needed
-* _____ update the lab2.c and lab2main.c file in your repo with your completed files
-* _____ Do walkthrough 1
-* _____ Do walkthrough 2
+## Features
+- `lastDigit(number)` - return a number's last digit
+- `wholeMinutes(seconds)` - convert seconds into whole minutes
 
+## Files
+`lab2.c` contains the functions and `lab2main.c` contains the interactive demonstration.
 
-Optional: 
-* _____ Do the practice problem
-* _____ Create test cases and a test main for the practice problem
-* _____ put your completed practice problems back into your lab 2 repository
+## Build and run
+```bash
+gcc -Wall -Wextra lab2.c lab2main.c -o lab2
+./lab2
+```
 
+On Windows, use `lab2.exe`. Enter a number and then a number of seconds.
 
-## Lab 2 repo file organization:
-
-** lab2.c - this is where your functions for lab2 goes.  DO NOT PUT YOUR TEST MAIN HERE!
-* lab2main.c - this is where you write a main() function to test your program
-* lab2practice.c - put the code for your functions for your extra practice problems here.  DO NOT PUT THE MAIN HERE!
-* lab2practicemain.c - put the main() used for testing your practice problems here
-
+## Testing
+Try positive and negative numbers, zero, 60 seconds and 125 seconds. This is an early course exercise in functions and basic tests.
